@@ -48,7 +48,7 @@
         <!--Add New Photo-->
         <scene sceneID="M83-2r-tYx">
             <objects>
-                <viewController id="xg4-0j-jkN" sceneMemberID="viewController">
+                <viewController id="xg4-0j-jkN" customClass="AddPhotoViewController" customModule="knockInsta" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GJ8-4F-4gv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -83,6 +83,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="savebutton:" destination="xg4-0j-jkN" eventType="touchUpInside" id="8Vc-23-kvT"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="camera_1f4f7" translatesAutoresizingMaskIntoConstraints="NO" id="QA5-bI-P4r">
                                 <rect key="frame" x="33" y="149" width="349" height="221"/>
